@@ -7,6 +7,24 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# Laravel with React
+This project was thrown together to demonstrate React with Laravel. It is for demonstration purposes only. 
+
+Dependencies:
+* [PHP and basic Laravel executables](https://laravel.com/docs/7.x/installation)
+* [Node (npm)](https://nodejs.org/en/download/package-manager/)
+* [Laravel Breeze](https://laravel.com/docs/9.x/starter-kits#laravel-breeze-installation)
+* [Docker Compose](https://docs.docker.com/compose/install/)
+
+To get up and running:
+1) Create a `.env` file from the `.env.example` and change the DB_DATABASE, DB_USERNAME, DB_PASSWORD
+2) Run `docker-compose up -d` to spin up mysql
+3) Run `npm install`
+4) Run `php artisan serve`
+5) Lastly, run `php artisan migrate`
+
+All the React pages are under `/resources/js`. To rapidly prototype, run `npm run hot`.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
